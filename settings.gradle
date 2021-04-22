@@ -1,0 +1,7 @@
+include ':details'
+include ':favourites'
+include ':commons'
+include ':domain'
+include ':data'
+include ':app'
+rootProject.name = "MoedaBitCoin"

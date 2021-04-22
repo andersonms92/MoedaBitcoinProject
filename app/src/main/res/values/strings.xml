@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MoedaBitCoin</string>
+    <string name="title_splash">Moeda Digital</string>
+    <string name="coins">Moedas</string>
+    <string name="favorites">Adicionadas</string>
+    <string name="tit_digital_coin">Moeda Digital</string>
+    <string name="search_bar">Pesquisar moeda</string>
+    <string name="string_volumes_negociados">volumes negociados</string>
+    <string name="string_ultima_hora">última hora</string>
+    <string name="string_ultimo_dia">último dia</string>
+    <string name="string_ultimo_mes">último mês</string>
+    <string name="valor_padrao">$0.000,00</string>
+</resources>

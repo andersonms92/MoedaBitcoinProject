@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_coin_tem"
+    app:cardBackgroundColor="@color/black" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_item_coin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/item_coin_icon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_margin="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/item_coin_name"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/item_coin_name"
+                android:layout_width="127dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/cabin"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.312"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/item_coin_asset_id"
+                android:layout_width="40dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/cabin"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.239"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/item_coin_name"
+                app:layout_constraintVertical_bias="0.0"
+                />
+
+        <TextView
+            android:id="@+id/item_coin_value_usd"
+            android:layout_width="99dp"
+            android:layout_height="24dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toEndOf="@+id/item_coin_name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.363"
+            android:text="@string/valor_padrao"/>
+
+        <ImageView
+            android:id="@+id/coin_item_favourite_star"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/item_coin_value_usd"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/item_coin_name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.48"
+            app:srcCompat="@drawable/ic_baseline_star_24" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
